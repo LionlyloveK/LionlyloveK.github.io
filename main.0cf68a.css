@@ -12,6 +12,9 @@
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, .75)
 }
 
+/* 分类 */
+
+/* 分类 */
 .mid-col,
 .mid-col.show .article,
 .tools-col,
@@ -2203,14 +2206,16 @@ pre .id {
 .article img {
   max-width: 100%
 }
-.article-inner h1.article-title_code_ant, .article-title_code_ant {
-	color: #000000;
-	margin-left: 0;
-	font-weight: 300;
-	line-height: 35px;
-	margin-bottom: 20px;
-	font-size: 32px;
-	transition: color .3s
+
+.article-inner h1.article-title_code_ant,
+.article-title_code_ant {
+  color: #000000;
+  margin-left: 0;
+  /* font-weight: 300; */
+  line-height: 35px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  transition: color .3s
 }
 
 .article-inner h1.article-title,
