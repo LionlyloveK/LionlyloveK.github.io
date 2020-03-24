@@ -42,59 +42,74 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay" style="background: #4d4d4d">
+</div>
 <div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			<img src="/img/touxiang.jpg" class="js-avatar">
-		</a>
-		<hgroup>
-		  <h1 class="header-author"><a href="/">LionlyloveK</a></h1>
-		</hgroup>
-		
-		<p class="header-subtitle">一只小小的程序猿</p>
-		
+  <header id="header" class="inner">
+    <a href="/" class="profilepic">
+      <img src="/img/touxiang.jpg" class="js-avatar">
+    </a>
+    <hgroup>
+      <h1 class="header-author"><a href="/">LionlyloveK</a></h1>
+    </hgroup>
+    
+    <p class="header-subtitle">一只小小的程序猿</p>
+    
 
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
-	        
-				<li><a href="/categories">分类</a></li>
-	        
-				<li><a href="/tags">标签</a></li>
-	        
+    <li><a href="/">主页</a></li>
+    
+    <li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+    
+    <li><a href="/categories">分类</a></li>
+    
+    <li><a href="/tags">标签</a></li>
+    
 			</ul>
+		</nav>
+		<nav>
+			总文章数 2
 		</nav>
 		<nav class="header-smart-menu">
     		
-    			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
-    			
-            
+    
+    <a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    
+    
+    
+    <a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    
+    
+    
+    <a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    
+    
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="https://github.com/lionlylovek" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="qq" target="_blank" href="/information" title="qq"><i class="icon-qq"></i></a>
-		        
-					<a class="bilibili" target="_blank" href="#" title="bilibili"><i class="icon-bilibili"></i></a>
-		        
+    <a class="github" target="_blank" href="https://github.com/lionlylovek" title="github"><i
+        class="icon-github"></i></a>
+    
+    <a class="qq" target="_blank" href="/information" title="qq"><i
+        class="icon-qq"></i></a>
+    
+    <a class="bilibili" target="_blank" href="#" title="bilibili"><i
+        class="icon-bilibili"></i></a>
+    
 			</div>
-		</nav>
-	</header>		
+<!-- 网易云音乐插件 -->
+	
+    <div style="position:absolute; bottom:120px left:auto; width:85%">
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52"
+        src="//music.163.com/outchain/player?type=2&id=1343582882&auto=1&height=32"></iframe>
+    </div>
+    
+
+    </nav>
+  </header>
 </div>
 
     </div>
@@ -179,7 +194,8 @@
   
 
         
-        <a href="/2020/03/23/haha/" class="archive-article-date">
+        
+<a href="/2020/03/23/haha/" class="archive-article-date">
   	<time datetime="2020-03-23T08:25:02.197Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-23</time>
 </a>
         
@@ -241,7 +257,8 @@
   
 
         
-        <a href="/2020/03/23/hello-world/" class="archive-article-date">
+        
+<a href="/2020/03/23/hello-world/" class="archive-article-date">
   	<time datetime="2020-03-23T08:05:59.060Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-23</time>
 </a>
         
@@ -305,10 +322,21 @@
     		&copy; 2020 LionlyloveK
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	BY	LiOnlyLoveK
       	</div>
     </div>
   </div>
+  
+	<!-- 不蒜子统计 -->
+	<span id="busuanzi_container_site_pv">
+			本站总访问量<span id="busuanzi_value_site_pv"></span>次
+	</span>
+	<span class="post-meta-divider">|</span>
+	<span id="busuanzi_container_site_uv" style='display:none'>
+			本站访客数<span id="busuanzi_value_site_uv"></span>人
+	</span>
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 </footer>
     </div>
     <script>
@@ -538,5 +566,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":245,"height":415},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
 </html>
