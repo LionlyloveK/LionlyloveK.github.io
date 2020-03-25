@@ -334,7 +334,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">88字</span>
+        <span class="post-count">69字</span>
       </span>
     </span>
 
@@ -362,14 +362,12 @@
   
 </p></center>
       
-        <h1 id="这是一个一级标题"><a href="#这是一个一级标题" class="headerlink" title="这是一个一级标题"></a>这是一个一级标题</h1><h2 id="这是一个二级标题"><a href="#这是一个二级标题" class="headerlink" title="这是一个二级标题"></a>这是一个二级标题</h2><blockquote>
-<p>野火烧不尽，春风吹又生。</p>
+        <blockquote>
+<p><code>input</code>里的<code>onchange</code>事件要传<code>event</code>来获取内容</p>
 </blockquote>
-<p>让我们聊聊 <code>html</code>。</p>
-<h3 id="input里的onchange事件要传event来获取内容"><a href="#input里的onchange事件要传event来获取内容" class="headerlink" title="input里的onchange事件要传event来获取内容"></a>input里的onchange事件要传event来获取内容</h3><h3 id="两种绑定this的方法"><a href="#两种绑定this的方法" class="headerlink" title="两种绑定this的方法"></a>两种绑定this的方法</h3>
-        
-          <a class="article-more-a" href="/2020/03/25/react01/#more">more >></a>
-        
+<h3 id="两种绑定this的方法"><a href="#两种绑定this的方法" class="headerlink" title="两种绑定this的方法"></a>两种绑定this的方法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="keyword">this</span>.事件名.bind(<span class="keyword">this</span>)&#125;</span><br><span class="line">&#123;a=&gt;<span class="keyword">this</span>.事件名(a)&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>使用实验性语法绑定可以直接绑定<code>this</code></strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">事件名 =<span class="function"><span class="params">()</span> =&gt;</span>&#123; <span class="comment">//直接绑定了this</span></span><br><span class="line">    代码块</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       

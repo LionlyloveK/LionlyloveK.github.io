@@ -52,17 +52,19 @@
     <link href="http://yoursite.com/2020/03/25/react01/"/>
     <id>http://yoursite.com/2020/03/25/react01/</id>
     <published>2020-03-25T00:56:26.648Z</published>
-    <updated>2020-03-25T05:46:18.818Z</updated>
+    <updated>2020-03-25T06:05:14.767Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="这是一个一级标题"><a href="#这是一个一级标题" class="headerlink" title="这是一个一级标题"></a>这是一个一级标题</h1><h2 id="这是一个二级标题"><a href="#这是一个二级标题" class="headerlink" title="这是一个二级标题"></a>这是一个二级标题</h2><blockquote><p>野火烧不尽，春风吹又生。</p></blockquote><p>让我们聊聊 <code>html</code>。</p><h3 id="input里的onchange事件要传event来获取内容"><a href="#input里的onchange事件要传event来获取内容" class="headerlink" title="input里的onchange事件要传event来获取内容"></a>input里的onchange事件要传event来获取内容</h3><h3 id="两种绑定this的方法"><a href="#两种绑定this的方法" class="headerlink" title="两种绑定this的方法"></a>两种绑定this的方法</h3><a id="more"></a><table>    <tr>        <th rowspan="2">值班人员</th>        <th>星期一</th>        <th>星期二</th>        <th>星期三</th>    </tr>    <tr>        <td>李强</td>        <td>张明</td>        <td>王平</td>    </tr></table><i class="icon-weibo"></i><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="keyword">this</span>.事件名.bind(<span class="keyword">this</span>)&#125;</span><br><span class="line">&#123;a=&gt;<span class="keyword">this</span>.事件名(a)&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<blockquote><p><code>input</code>里的<code>onchange</code>事件要传<code>event</code>来获取内容</p></blockquote><h3 id="两种绑定this的方法"><a href="#两种绑定this的方法" class="headerlink" title="两种绑定this的方法"></a>两种绑定this的方法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="keyword">this</span>.事件名.bind(<span class="keyword">this</span>)&#125;</span><br><span class="line">&#123;a=&gt;<span class="keyword">this</span>.事件名(a)&#125;</span><br></pre></td></tr></table></figure><p><strong>使用实验性语法绑定可以直接绑定<code>this</code></strong></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">事件名 =<span class="function"><span class="params">()</span> =&gt;</span>&#123; <span class="comment">//直接绑定了this</span></span><br><span class="line">    代码块</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;这是一个一级标题&quot;&gt;&lt;a href=&quot;#这是一个一级标题&quot; class=&quot;headerlink&quot; title=&quot;这是一个一级标题&quot;&gt;&lt;/a&gt;这是一个一级标题&lt;/h1&gt;&lt;h2 id=&quot;这是一个二级标题&quot;&gt;&lt;a href=&quot;#这是一个二级标题&quot; class=&quot;headerlink&quot; title=&quot;这是一个二级标题&quot;&gt;&lt;/a&gt;这是一个二级标题&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;野火烧不尽，春风吹又生。&lt;/p&gt;
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;input&lt;/code&gt;里的&lt;code&gt;onchange&lt;/code&gt;事件要传&lt;code&gt;event&lt;/code&gt;来获取内容&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;让我们聊聊 &lt;code&gt;html&lt;/code&gt;。&lt;/p&gt;
-&lt;h3 id=&quot;input里的onchange事件要传event来获取内容&quot;&gt;&lt;a href=&quot;#input里的onchange事件要传event来获取内容&quot; class=&quot;headerlink&quot; title=&quot;input里的onchange事件要传event来获取内容&quot;&gt;&lt;/a&gt;input里的onchange事件要传event来获取内容&lt;/h3&gt;&lt;h3 id=&quot;两种绑定this的方法&quot;&gt;&lt;a href=&quot;#两种绑定this的方法&quot; class=&quot;headerlink&quot; title=&quot;两种绑定this的方法&quot;&gt;&lt;/a&gt;两种绑定this的方法&lt;/h3&gt;
+&lt;h3 id=&quot;两种绑定this的方法&quot;&gt;&lt;a href=&quot;#两种绑定th
+      
     
     </summary>
     
