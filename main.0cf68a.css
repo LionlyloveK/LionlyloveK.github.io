@@ -514,7 +514,6 @@ template {
   position: relative;
   color: #333;
   font-family: lucida console;
-  padding-bottom: 10px;
   /* 这种字体的英文比较好看（像代码样式） */
 }
 

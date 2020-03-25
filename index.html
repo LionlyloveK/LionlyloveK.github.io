@@ -70,7 +70,7 @@
 			</ul>
 		</nav>
 		<nav>
-			总文章数 2
+			总文章数 3
     </nav>
     <nav class="header-smart-menu">
       
@@ -180,6 +180,128 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-react数据渲染" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        <!-- 
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/25/react%E6%95%B0%E6%8D%AE%E6%B8%B2%E6%9F%93/">react数据渲染</a>
+    </h1>
+  
+ -->
+        
+        
+<a href="/2020/03/25/react%E6%95%B0%E6%8D%AE%E6%B8%B2%E6%9F%93/" class="archive-article-date">
+  	<time datetime="2020-03-25T07:38:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-25</time>
+</a>
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">345字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+
+          
+        <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      <center><p>
+  
+    <h1 itemprop="name">
+      <a class="article-title_code_ant" href="/2020/03/25/react%E6%95%B0%E6%8D%AE%E6%B8%B2%E6%9F%93/">react数据渲染</a>
+    </h1>
+  
+</p></center>
+      
+        <h3 id="react的数据渲染使用map方法或forEach方法"><a href="#react的数据渲染使用map方法或forEach方法" class="headerlink" title="react的数据渲染使用map方法或forEach方法"></a>react的数据渲染使用map方法或forEach方法</h3><blockquote>
+<p>先在react的<code>componentDidMount</code>生命周期中请求数据，将数据保存在<code>this.state</code>中<br>例如：请求到的数据为<code>list</code></p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> componentDidMount() &#123;</span><br><span class="line">    <span class="keyword">let</span> fs = <span class="keyword">await</span> fetch(<span class="string">'/api/days'</span>);<span class="comment">//请求接口</span></span><br><span class="line">    <span class="keyword">let</span> res = <span class="keyword">await</span> fs.json();<span class="comment">//获取数据</span></span><br><span class="line">    <span class="keyword">this</span>.setState(&#123;<span class="comment">//保存到state中</span></span><br><span class="line">      list: res.days,</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2020/03/25/react%E6%95%B0%E6%8D%AE%E6%B8%B2%E6%9F%93/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/react//" class="article-tag-list-link color1">react</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/25/react%E6%95%B0%E6%8D%AE%E6%B8%B2%E6%9F%93/">展开全文</a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-js-函数防抖与函数节流" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -312,7 +434,7 @@
         <!-- 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/25/react01/">react学习</a>
+      <a class="article-title" href="/2020/03/25/react01/">react事件绑定</a>
     </h1>
   
  -->
@@ -329,7 +451,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">69字</span>
+        <span class="post-count">70字</span>
       </span>
     </span>
 
@@ -352,7 +474,7 @@
       <center><p>
   
     <h1 itemprop="name">
-      <a class="article-title_code_ant" href="/2020/03/25/react01/">react学习</a>
+      <a class="article-title_code_ant" href="/2020/03/25/react01/">react事件绑定</a>
     </h1>
   
 </p></center>
@@ -360,9 +482,10 @@
         <blockquote>
 <p><code>input</code>里的<code>onchange</code>事件要传<code>event</code>来获取内容</p>
 </blockquote>
-<h3 id="两种绑定this的方法"><a href="#两种绑定this的方法" class="headerlink" title="两种绑定this的方法"></a>两种绑定this的方法</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="keyword">this</span>.事件名.bind(<span class="keyword">this</span>)&#125;</span><br><span class="line">&#123;a=&gt;<span class="keyword">this</span>.事件名(a)&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>使用实验性语法绑定可以直接绑定<code>this</code></strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">事件名 =<span class="function"><span class="params">()</span> =&gt;</span>&#123; <span class="comment">//直接绑定了this</span></span><br><span class="line">    代码块</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="两种绑定this的方法"><a href="#两种绑定this的方法" class="headerlink" title="两种绑定this的方法"></a>两种绑定this的方法</h3>
+        
+          <a class="article-more-a" href="/2020/03/25/react01/#more">more >></a>
+        
       
 
       
@@ -666,5 +789,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       </script>
       
   </div>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":145,"height":315},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":145,"height":315},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
 </html>
