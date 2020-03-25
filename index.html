@@ -239,7 +239,6 @@
 <h2 id="函数节流-throttle"><a href="#函数节流-throttle" class="headerlink" title="函数节流(throttle)"></a>函数节流(throttle)</h2><blockquote>
 <p>显示器刷新率一般是60/120fps,人眼睛能捕捉的频率,如果特别高,没有实际意义</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 节流(固定单位时间内触发一次)</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">throttle</span>(<span class="params">fn, delay = <span class="number">1000</span></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> flag = <span class="literal">true</span> <span class="comment">// 做一个判断标识,当是false,return</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; <span class="comment">//闭包</span></span><br><span class="line">    <span class="keyword">if</span> (!flag) &#123;</span><br><span class="line">      <span class="keyword">return</span></span><br><span class="line">    &#125;</span><br><span class="line">    flag = <span class="literal">false</span></span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">      fn.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>) <span class="comment">// 改变指针和传入参数</span></span><br><span class="line">      flag = <span class="literal">true</span></span><br><span class="line">    &#125;, delay)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         
           <a class="article-more-a" href="/2020/03/25/js-%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96%E4%B8%8E%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/#more">more >></a>
         
@@ -269,10 +268,6 @@
         		<li class="article-tag-list-item">
         			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端/JS//" class="article-tag-list-link color3">JS</a>
-        		</li>
       		
 		</ul>
 	</div>
@@ -280,7 +275,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/25/js-%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96%E4%B8%8E%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/03/25/js-%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96%E4%B8%8E%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/">展开全文</a>
         </p>
       
 
@@ -401,7 +396,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/25/react01/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/03/25/react01/">展开全文</a>
         </p>
       
 

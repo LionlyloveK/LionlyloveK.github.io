@@ -1098,11 +1098,11 @@ html {
 }
 
 .left-col #header a {
-  color: #696969
+  color: #696969;
 }
 
 .left-col #header a:hover {
-  color: red
+  color: red;
 }
 
 .left-col #header .header-subtitle {
@@ -1137,7 +1137,8 @@ html {
 
 .left-col #header .header-menu li a {
   font-size: 14px;
-  min-width: 300px
+  min-width: 300px;
+  font-weight: bold;
 }
 
 .left-col #header .header-smart-menu {
@@ -1445,7 +1446,7 @@ pre .built_in,
 pre .class,
 pre .css~* .class,
 pre .function .title {
-  color: #a6e22e
+  color: rgba(36, 193, 246, .9)
 }
 
 pre .string,
@@ -2368,7 +2369,7 @@ pre .id {
 }
 
 .article-header {
-  border-left: 5px solid #4d4d4d;
+  border-left: 5px solid rgba(194, 36, 246, 0.9);
   padding: 30px 0 15px 25px;
   padding-left: 7.6923%
 }
@@ -2400,17 +2401,17 @@ pre .id {
 }
 
 .article-more-link a {
-  background: #4d4d4d;
+  background:linear-gradient(90deg,rgba(255,115,35,1) 0%,rgba(255,175,47,1) 100%);
   color: #fff;
   font-size: 12px;
   padding: 5px 8px;
   line-height: 16px;
-  border-radius: 2px;
-  transition: background .3s
+  border-radius: 4px;
+  transition: background .8s
 }
 
 .article-more-link a:hover {
-  background: #3c3c3c
+  background:linear-gradient(90deg,#aaf 0%,#acfcff 100%);
 }
 
 .article-more-link a.hidden {
@@ -2555,7 +2556,7 @@ pre .id {
   border-left: 5px solid #ccc;
   padding: 15px 20px;
   margin-top: 10px;
-  border-left: 5px solid #657b83;
+  border-left: 5px solid #24c1f685;
   background: #f6f6f6
 }
 
