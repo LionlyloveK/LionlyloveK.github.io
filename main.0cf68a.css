@@ -508,6 +508,46 @@ template {
   display: none
 }
 
+/* 文章中的超链接,鼠标悬浮特效*/
+.article-entry a {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  font-family: lucida console;
+  /* 这种字体的英文比较好看（像代码样式） */
+}
+
+/* 鼠标悬浮时，变色 */
+.article-entry a:hover {
+  color: #d7191a;
+  transition: .8s;
+}
+
+/* 鼠标悬浮时，下划线从中间向两边延伸 */
+.article-entry a:hover::after {
+  transform: scaleX(1);
+  /* 旋转，与transform连用；这里作用：鼠标悬浮时，底部的下划线从中间扩散到两边。
+ bottom right :左到右出现，左到右消失（需配合上面的::after）
+*/
+  transform-origin: bottom center;
+}
+
+/* 鼠标移开后，下划线从两边向中间消失 */
+.article-entry a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  /* 详见：https://www.w3school.com.cn/cssref/pr_transform-origin.asp,
+旋转，与transform连用；这里作用：鼠标移开后，底部的下划线从中间开始消失 */
+  transform-origin: bottom center;
+  transition: transform 0.5s ease-out;
+}
+
 a {
   background: transparent;
   text-decoration: none;
@@ -1230,19 +1270,19 @@ html {
 
 .article-entry .highlight,
 .article-entry pre {
-  background: #272822;
+  background:#ededed;
   margin: 10px 0;
   padding: 10px;
   overflow: auto;
   color: #fff;
-  font-size: .9em;
+  /* font-size: .9em; */
   line-height: 22.400000000000002px
 }
 
 .article-entry .gist .gist-file .gist-data .line-numbers,
 .article-entry .highlight .gutter pre,
 .article-entry .highlight .gutter pre .line {
-  color: #666
+  color: rgb(3, 3, 3);
 }
 
 .article-entry code,
@@ -1260,7 +1300,7 @@ html {
   background: none;
   text-shadow: none;
   padding: 0;
-  color: #fff
+  color: rgb(230, 24, 24)
 }
 
 .article-entry .highlight {
@@ -1313,7 +1353,7 @@ html {
 }
 
 .article-entry .highlight .line {
-  color: #fff;
+  color: rgb(45, 130, 199);
   min-height: 19px
 }
 
@@ -1379,7 +1419,7 @@ pre .comment {
 pre .class .params,
 pre .function .keyword,
 pre .keyword {
-  color: #66d9ef
+  color: #e4834a
 }
 
 pre .css .value,
@@ -2478,7 +2518,7 @@ pre .id {
   margin-top: 10px
 }
 
-.article-entry li code,
+/* .article-entry li code,
 .article-entry p code {
   padding: 1px 3px;
   margin: 0 3px;
@@ -2487,6 +2527,26 @@ pre .id {
   font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace;
   word-wrap: break-word;
   font-size: 14px
+} */
+
+.article-entry li code,
+.article-entry p code {
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin: 0 3px;
+  /* background:#ddd; */
+  /* border:2px solid #ccc; */
+  font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace;
+  word-wrap: break-word;
+  /* font-size:14px */
+}
+
+.markdown_views code {
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: -9px;
 }
 
 .article-entry blockquote {
@@ -2594,8 +2654,9 @@ pre .id {
   overflow-x: auto;
   color: #657b83;
   border: 1px solid #ccc;
-  text-shadow: 0 1px #444;
-  font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace
+  /* text-shadow: 0 1px #444; */
+  font-weight: bold;
+  /* font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace */
 }
 
 .article-entry pre code {
@@ -2854,9 +2915,9 @@ pre .id {
 }
 
 .page-reward .reward-type {
-  font-size: 16px;
+  font-size: 20px;
   display: block;
-  color: #4d4d4d;
+  color: white;
   margin: 20px 0 0
 }
 
@@ -3162,7 +3223,7 @@ pre .id {
   margin: 0 0 -10px -185px;
   cursor: default;
   pointer-events: none;
-  font-family: Satisfy, cursive;
+  /* font-family: Satisfy, cursive; */
   -webkit-font-smoothing: antialiased;
   transition: opacity .3s .3s;
   padding-bottom: 80px
@@ -3179,7 +3240,7 @@ pre .id {
 }
 
 .tooltip-top .tooltip-text {
-  border-bottom: 10px solid #4d4d4d;
+  border-bottom: 10px solid rgba(36, 193, 246, .9);
   overflow: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -3220,7 +3281,7 @@ pre .id {
   position: absolute;
   pointer-events: none;
   border-color: transparent;
-  border-top-color: #4d4d4d;
+  border-top-color: rgba(36, 193, 246, .9);
   border-width: 10px;
   margin-left: -10px
 }
