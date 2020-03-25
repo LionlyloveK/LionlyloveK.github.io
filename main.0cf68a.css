@@ -1919,7 +1919,7 @@ pre .id {
 }
 
 .archives-wrap .archive-year-wrap a {
-  color: #666;
+  color: #aaf;
   font-weight: 700;
   padding-left: 48px
 }
@@ -1950,12 +1950,12 @@ pre .id {
 
 .archives .archive-article-title {
   font-size: 16px;
-  color: #333;
+  color: #ff7349;
   transition: color .3s
 }
 
 .archives .archive-article-title:hover {
-  color: #657b83
+  color: #ff0000
 }
 
 .archives .archive-article-title span {
