@@ -234,32 +234,14 @@
 </p></center>
       
         <h2 id="实例方法：includes-startsWith-endsWith"><a href="#实例方法：includes-startsWith-endsWith" class="headerlink" title="实例方法：includes(), startsWith(), endsWith()"></a>实例方法：<code>includes()</code>, <code>startsWith()</code>, <code>endsWith()</code></h2><ul>
-<li>includes()：返回布尔值，表示是否找到了参数字符串。</li>
-<li>startsWith()：返回布尔值，表示参数字符串是否在原字符串的头部。</li>
-<li>endsWith()：返回布尔值，表示参数字符串是否在原字符串的尾部。</li>
+<li><code>includes()</code>：返回布尔值，表示是否找到了参数字符串。</li>
+<li><code>startsWith()</code>：返回布尔值，表示参数字符串是否在原字符串的头部。</li>
+<li><code>endsWith()</code>：返回布尔值，表示参数字符串是否在原字符串的尾部。</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> s = <span class="string">'Hello world!'</span>;</span><br><span class="line">s.startsWith(<span class="string">'Hello'</span>) <span class="comment">// true</span></span><br><span class="line">s.endsWith(<span class="string">'!'</span>) <span class="comment">// true</span></span><br><span class="line">s.includes(<span class="string">'o'</span>) <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-<p>这三个方法都支持第二个参数，表示开始搜索的位置。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> s = <span class="string">'Hello world!'</span>;</span><br><span class="line">s.startsWith(<span class="string">'world'</span>, <span class="number">6</span>) <span class="comment">// true</span></span><br><span class="line">s.endsWith(<span class="string">'Hello'</span>, <span class="number">5</span>) <span class="comment">// true</span></span><br><span class="line">s.includes(<span class="string">'Hello'</span>, <span class="number">6</span>) <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>上面代码表示，使用第二个参数n时，<code>endsWith</code>的行为与其他两个方法有所不同。它针对前n个字符，而其他两个方法针对从第n个位置直到字符串结束。</p>
-</blockquote>
-<h2 id="实例方法：repeat"><a href="#实例方法：repeat" class="headerlink" title="实例方法：repeat()"></a>实例方法：<code>repeat()</code></h2><blockquote>
-<p><code>repeat</code>方法返回一个新字符串，表示将原字符串重复n次。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#39;x&#39;.repeat(3) &#x2F;&#x2F; &quot;xxx&quot;</span><br><span class="line">&#39;hello&#39;.repeat(2) &#x2F;&#x2F; &quot;hellohello&quot;</span><br><span class="line">&#39;na&#39;.repeat(0) &#x2F;&#x2F; &quot;&quot;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>参数如果是小数，会被取整。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#39;na&#39;.repeat(2.9) &#x2F;&#x2F; &quot;nana&quot;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>如果<code>repeat</code>的参数是负数或者Infinity，会报错。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#39;na&#39;.repeat(Infinity)</span><br><span class="line">&#x2F;&#x2F; RangeError</span><br><span class="line">&#39;na&#39;.repeat(-1)</span><br><span class="line">&#x2F;&#x2F; RangeError</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>如果<code>repeat</code>的参数是字符串，则会先转换成数字。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#39;na&#39;.repeat(&#39;na&#39;) &#x2F;&#x2F; &quot;&quot;</span><br><span class="line">&#39;na&#39;.repeat(&#39;3&#39;) &#x2F;&#x2F; &quot;nanana&quot;</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2020/03/26/es6%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B0%E5%A2%9E%E6%96%B9%E6%B3%95/#more">more >></a>
+        
       
 
       
@@ -924,11 +906,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">es6</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color4">es6</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -936,11 +918,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">react</a>
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
+                <a href="javascript:void(0)" class="js-tag color1">react</a>
               </li>
             
             <div class="clearfix"></div>
